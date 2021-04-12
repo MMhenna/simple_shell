@@ -1,5 +1,5 @@
-#ifndef SHELL
-#define SHELL
+#ifndef _SHELL_
+#define _SHELL_
 
 #include <string.h>
 #include <stdio.h>
@@ -45,7 +45,8 @@ int str_len(char *);
 void double_free(char **);
 void single_free(int, ...);
 void error_printing(char *, int, char *);
-void exec_error(char , int, char *);/ built_in.c   */
+void exec_error(char , int, char *);
+/* built_in.c   */
 void env_shell(char *);
 void exit_shell(char *);
 void (*check_built_ins(char *))(char *);
