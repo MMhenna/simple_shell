@@ -21,15 +21,15 @@
 
 typedef struct builtin_d
 {
-	char *built;
-	void (*f)(char *);
+        char *built;
+        void (*f)(char *);
 } builtin_t;
 
 extern char **environ;
 
 /* parsing.c */
 void INThandler(int);
-void parse_line(char *, size_t, int, char **);
+void parse_line(char , size_t, int, char *);
 char **token_interface(char *, const char *, int);
 char **tokenize(int, char *, const char *);
 int count_token(char *, const char *);
@@ -45,8 +45,7 @@ int str_len(char *);
 void double_free(char **);
 void single_free(int, ...);
 void error_printing(char *, int, char *);
-void exec_error(char *, int, char *);
-
+void exec_error(char , int, char *);
 /* built_in.c   */
 void env_shell(char *);
 void exit_shell(char *);
