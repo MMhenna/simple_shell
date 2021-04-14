@@ -1,11 +1,9 @@
 ![Simple shell](https://fr.techtribune.net/wp-content/uploads/2020/11/Create-Simple-Shell-Scripts-in-Linux.png)
 
-**0x16. C - Simple shell**
-**In this project we'll create a simple UNIX command interpreter in C programming language.**
+**-0x16. C - Simple shell**
+**-In this project we'll create a simple UNIX command interpreter in C programming language.**
 
-**Table of Contents**
-
----
+**-Table of Contents**
 
 	-Introduction
         What is Shell
@@ -23,16 +21,16 @@
 		Resources
     -Authors
 
-**Introduction**
+**-Introduction**
 
-**What is Shell**
+**-What is Shell**
 
 A shell is a command-line interpreter, it is the computer program that provides a user interface to access the services of the operating system. Depending on the type of interface they use, shells can be of various types, in this case, a shell program of the type sh (Bourne Shell) will be developed. Users typically interact with a shell using a terminal emulator that is used for entering data into and displaying or printing data from, a computer or a computing system.
-**What is it for**
+**-What is it for**
 
 This consists of interpreting orders. It incorporates features such as process control, input/output redirection, law listing and reading, protection, communications, and a command language for writing batch programs or scripts. All Unix-type systems have at least one interpreter compatible with the Bourne shell. The Bourne shell program is found within the Unix file hierarchy at /bin/sh.
-**Project Information**
----
+**-Project Information**
+
 **Tasks**
 
     Task 0. README, man, AUTHORS
@@ -44,7 +42,7 @@ This consists of interpreting orders. It incorporates features such as process c
     Task 6. Simple shell 1.0
     Task 7. What happens when you type ls -l in the shell
 
-**General requirements**
+**-General requirements**
 
     Allowed editors: vi, vim, emacs
     All your files will be compiled on Ubuntu 14.04 LTS
@@ -55,7 +53,7 @@ This consists of interpreting orders. It incorporates features such as process c
     This shell should not have any memory leaks
     Unless specified otherwise, your program must have the exact same output as sh (/bin/sh) as well as the exact same error output.
 
-**Allowed functions used**
+**-Allowed functions used**
 
     execve (man 2 execve)
     exit (man 3 exit)
@@ -72,7 +70,7 @@ This consists of interpreting orders. It incorporates features such as process c
     wait (man 2 wait)
     write (man 2 write)
 
-**Documentation**
+**-Documentation**
 ---
 **Compilation**
 
