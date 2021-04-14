@@ -8,9 +8,8 @@
  * Return: Always 0
  */
 
-int main(int ac, char **av)
+int main(__attribute__((unused))int ac, char **av)
 {
-	(void)ac;
 	char *line;
 	size_t size;
 	int command_counter;
