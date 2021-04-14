@@ -1,6 +1,7 @@
 ![Simple shell](https://fr.techtribune.net/wp-content/uploads/2020/11/Create-Simple-Shell-Scripts-in-Linux.png)
 
 **-0x16. C - Simple shell**
+
 **-In this project we'll create a simple UNIX command interpreter in C programming language.**
 
 **-Table of Contents**
@@ -29,6 +30,7 @@ A shell is a command-line interpreter, it is the computer program that provides 
 **-What is it for**
 
 This consists of interpreting orders. It incorporates features such as process control, input/output redirection, law listing and reading, protection, communications, and a command language for writing batch programs or scripts. All Unix-type systems have at least one interpreter compatible with the Bourne shell. The Bourne shell program is found within the Unix file hierarchy at /bin/sh.
+
 **-Project Information**
 
 **Tasks**
