@@ -100,5 +100,5 @@ hsh main.c shell.c
 $
 ```
 **Authors**
-- MEHDI MHENNA 
-- MOUHAMED AMEUR BESBES
+- Mehdi Mhenna 
+- Mouhamed Ameur Besbes
