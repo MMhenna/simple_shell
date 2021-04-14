@@ -27,39 +27,39 @@ typedef struct builtin_d
 
 extern char **environ;
 
-/* parsing.c */
+/** parsing.c */
 void INThandler(int);
 void parse_line(char *, size_t, int, char **);
 char **token_interface(char *, const char *, int);
 char **tokenize(int, char *, const char *);
 int count_token(char *, const char *);
 
-/* assistant_functions.c */
+/** assistant_functions.c */
 int _strcmp(char *, char *);
 char *_strdup(char *);
 void print_str(char *, int);
 int _putchar(char);
 int str_len(char *);
 
-/* helper_functions.c */
+/** helper_functions.c */
 void double_free(char **);
 void single_free(int, ...);
 void error_printing(char *, int, char *);
 void exec_error(char *, int, char *);
-/* built_in.c   */
+/** built_in.c   */
 void cd_shell(char *);
 void env_shell(char *);
 void exit_shell(char *);
 void (*check_built_ins(char *))(char *);
 int built_in(char **, char *);
 
-/* print_number.c*/
+/** print_number.c*/
 int print_number(int);
 
-/* child.c  */
+/** child.c  */
 void create_child(char **, char *, int, char **);
 
-/* path.c  */
+/** path.c  */
 char *path_finder(char *);
 int find_path(char *);
 char **tokenize_path(int, char *);
