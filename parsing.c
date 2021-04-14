@@ -46,7 +46,7 @@ void parse_line(char *line, size_t size,__attribute__((unused)) int command_coun
 		}
 		i = built_in(param_array, line);
 		if (i == -1)
-		/*	create_child(param_array, line, command_counter, av);*/
+			create_child(param_array, line, command_counter, av);
 		for (i = 0; param_array[i] != NULL; i++)
 			free(param_array[i]);
 		single_free(2, param_array, line);

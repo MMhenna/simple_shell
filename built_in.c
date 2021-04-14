@@ -1,6 +1,39 @@
 #include "shell.h"
 
 /**
+ * cd_shell - Changes the current working directory to the parameter passed to cd.
+ * if no parameter is passed it will change directory to HOME.
+ * @line: A string representing the input from the user.
+ */
+
+void cd_shell(char *line)
+{
+	int index;
+	int token_count;
+	char **param_array;
+	const char *delim = "\n\t ";
+
+	token_count = 0;
+	param_array = token_interface(line, delim, token_count);
+	if (param_array[0] == NULL)
+	{
+		single_free(2, param_array, line);
+		return;
+	}
+	if (param_array[1] == NULL)
+	{
+		index = find_path("HOME");
+		chdir((environ[index]) + 5);
+	}
+	else if (_strcmp(param_array[1], "-") == 0)
+		print_str(param_array[1], 0);
+
+	else
+		chdir(param_array[1]);
+	double_free(param_array);
+}
+
+/**
  * env_shell - Prints all the environmental variables in the current shell.
  * @line: A string representing the input from the user.
  */
@@ -25,6 +58,7 @@ void env_shell(__attribute__((unused))char *line)
 
 void exit_shell(char *line)
 {
+
 	free(line);
 	print_str("\n", 1);
 	exit(1);
@@ -44,6 +78,7 @@ void (*check_built_ins(char *str))(char *str)
 	builtin_t buildin[] = {
 		{"exit", exit_shell},
 		{"env", env_shell},
+		{"cd", cd_shell},
 		{NULL, NULL}
 	};
 
