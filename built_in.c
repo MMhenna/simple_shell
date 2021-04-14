@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * cd_shell - Changes the current working directory to the parameter passed to cd.
+ * cd_shell - Changes the current working directory to the parameter passed.
  * if no parameter is passed it will change directory to HOME.
  * @line: A string representing the input from the user.
  */

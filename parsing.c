@@ -21,7 +21,7 @@ void INThandler(int sig)
  * @av: Name of the program running the shell
  */
 
-void parse_line(char *line, size_t size,__attribute__((unused)) int command_counter, __attribute__((unused))char **av)
+void parse_line(char *line, size_t size, int command_counter, char **av)
 {
 	int i;
 	ssize_t read_len;
